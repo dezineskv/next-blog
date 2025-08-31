@@ -16,9 +16,12 @@ const BlogList = () => {
   useEffect(() => {
     fetchBlogs();
   }, []);
+  
   return (
     <div>
-      <h1 className="text-xl sm:text-3xl font-medium my-6 pb-6 mx-auto text-center">Search blogs by Category</h1>
+      <h1 className="text-xl sm:text-3xl font-medium my-6 pb-6 mx-auto text-center">
+        Search blogs by Category
+      </h1>
 
       <div className="flex justify-center gap-6 my-10">
         <button
@@ -54,8 +57,8 @@ const BlogList = () => {
           .map((item) => {
             return (
               <BlogItem
-                key={item.id}
-                id={item.id}
+                key={item._id}
+                id={item._id}
                 image={item.image}
                 title={item.title}
                 description={item.description}
