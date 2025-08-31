@@ -2,7 +2,7 @@ import logo_black from "./logo_black.png";
 import blog_profile1 from "./blog_profile1.png";
 import blog_img1 from "./blog_img1.jpg";
 import blog_img2 from "./blog_img2.jpg";
-import blog_img3 from "./blog_img3.jpg";
+import blog_img3 from "./blog_img3.jpeg"
 import logo2 from "./logo2.jpg";
 
 export const assets = {
@@ -11,7 +11,7 @@ export const assets = {
   blog_img1,
   blog_img2,
   blog_img3,
-  logo2
+  logo2,
 };
 
 export const blog_data = [

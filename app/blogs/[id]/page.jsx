@@ -56,7 +56,7 @@ const page = ({ params }) => {
               />
             </Link>
             {/* <div className="flex items-center gap-2 font-medium py-1 px-3 sm:py-3 sm:px-6 border border-black shadow-[-7pz_7px_0px_#000000]"> */}
-                <div className="flex items-center gap-2 ">
+            <div className="flex items-center gap-2 ">
               <SearchBar />
             </div>
           </div>
@@ -91,32 +91,35 @@ const page = ({ params }) => {
             priority={true}
           />
           <div className="mx-auto max-w-[980px]">
-            <h1 className="text-lg">Introduction: </h1>
+            <h1 className="text-lg">{data.author}'s Post: </h1>
             <div className="blog-content">{data.description}</div>
-            {/* <h3 className="my-5 text-[18px] font-semibold">
+            <h3 className="my-5 text-[18px] font-semibold ">
               Lorem ipsum dolor sit amet
             </h3>
-            <p className="my-3">
+            <p className="my-3 text-gray-500">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ex ea commodo consequat.
             </p>
-            <p className="my-3">
+            <p className="my-3 text-gray-500">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ex ea commodo consequat.
             </p>
 
-            <h1 className="text-lg">Conclusion: </h1>
-            <p className="my-3">
+            <h1 className="text-lg text-gray-500">Summary: </h1>
+            <p className="my-3 text-gray-500">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ex ea commodo consequat.
-            </p> */}
+            </p>
             <div className="my-24">
+              <Link href="/">
+                <p className="text-black font-semibold my-4">All Blogs</p>
+              </Link>
               <p className="text-black font-semibold my-4">Share</p>
               <div className="flex gap-4">
                 <p>
@@ -136,9 +139,6 @@ const page = ({ params }) => {
                     <path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-4 8" />
                   </svg>
                 </p>
-
-                <p>icons</p>
-                <p>icons</p>
               </div>
             </div>
           </div>

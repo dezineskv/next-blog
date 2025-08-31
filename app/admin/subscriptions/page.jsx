@@ -20,6 +20,7 @@ const page = () => {
       },
     });
     if (response.data.success) {
+      console.log(response.data);
       toast.success(response.data.msg);
       fetchEmails();
     } else {

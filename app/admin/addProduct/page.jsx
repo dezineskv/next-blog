@@ -51,18 +51,23 @@ const AddProduct = () => {
   };
   return (
     <>
+      <h1 className="pt-5 px-5 sm:pt-12 sm:pl-16">
+        Add a new blog post
+      </h1>
+
       <form onSubmit={onSubmitHandler} className="pt-5 px-5 sm:pt-12 sm:pl-16">
-        <p className="text-xl">Upload thumbnail</p>
-        <label htmlFor="image">
-          {/* <Image className="mt-4" width={140} height={90} src={!image?assets.upload:URL.createObjectURL(image)} alt="upload"/> */}
-          image
-        </label>
+        <p className="text-xl">
+          Blog Image
+          <br />
+          <br />
+        </p>
+        <label htmlFor="image">Upload Image/</label>
         <input
           type="file"
           id="image"
           onChange={(e) => setImage(e.target.files[0])}
         />
-        <p className="text-xl mt-4">Blog title</p>
+        <p className="text-xl mt-8">Blog title</p>
         <input
           className="w-full sm:w-[500px] mt-4 px-4 py-3 border"
           type="text"
